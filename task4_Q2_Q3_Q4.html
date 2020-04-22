@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+           
+            <script>
+            
+                // Q2  
+                // use function and using with for loop , if condition , and use function math sqrt : 
+            
+                    console.log(prime(24));
+                    console.log(prime(5));
+                    console.log(prime(16));
+                    function prime(x){
+                        var test="Prime";
+                        for(var i=x-1;i>Math.sqrt(x);i--){
+                            if(x%i==0){
+                            test="Not prime";
+                            break;
+                            }
+                        }
+                        return test;
+                    }
+
+                    // This is another way to Q2 :
+
+                     //call the function
+                    function isPrime(num) {
+
+                    // Do with switch - case the check about the number if prime or not
+                    switch(num/1){
+                    case 1 : console.log ("prime");
+                    return;
+
+                    }
+                    // if the number doesn't prime , than is print : not prime
+                    console.log("not prime");
+
+                    }
+                    // put a number to check if prime or not
+                    isPrime(1);
+                    isPrime(4); 
+
+
+                   // Q3
+                  // use function to check the type of the value :  
+           
+                    function getParamType(p){
+                    return typeof(p);
+                }
+
+                console.log(getParamType(16));
+                console.log(getParamType("Alice"));
+                console.log(getParamType(true));
+                console.log(getParamType(undefined));
+                console.log(getParamType([5,10,15]));
+                console.log(getParamType(func));
+
+                
+                function func(){
+                    console.log("I am func");
+
+                }
+
+                //Q4
+                // using the multipliction :
+      
+                function USDToNIS(x){
+                    return x*3.59637;
+                }
+                function NISToUSD(x){
+                    return x*0.278022;
+                }
+                function EURToNIS(x){
+                    return x*3.90795;
+
+                }
+                function NIStoEUR(x){
+                    return x*0.255915;
+                }
+
+                console.log(USDToNIS(3));
+                console.log(NISToUSD(3));
+                console.log(EURToNIS(3));
+                console.log(NIStoEUR(3));
+
+             </script>
+
+
+    </body>
+</html>
