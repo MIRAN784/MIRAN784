@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // -------- Q1 --------- :
+        
+        // we get from the user 2 var 
+        // than using with for loop to exctuite and with setTimeout + function math.floor and math random
+
+        var sec=prompt("Enter any time");
+        var counter=prompt("Enter how much times you want to repeat");
+        for(var i=0; i<counter;i++){
+        setTimeout(function(){
+            console.log(Math.floor(Math.random()*10));
+        },i*counter*1000);
+
+        }
+
+    </script>
+    
+</body>
+</html>
